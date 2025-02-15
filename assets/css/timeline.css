@@ -1,0 +1,50 @@
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #0cb07f;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 4px;
+    height: 95%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: #0cb07f;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #0cb07f;
+    left: 21px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.timeline-item.delivered::before {
+    background: #e0e0e0; /* Grey */
+    box-shadow: 0px 0px 6px 4px #ccc;
+}
+
+.timeline-item.out_of_delivery::before {
+    background: #e0e0e0; /* Grey */
+    box-shadow: 0px 0px 6px 4px #ccc;
+}
+
+.timeline-item.shipped::before {
+    background: #e0e0e0; /* Grey */
+    box-shadow: 0px 0px 6px 4px #ccc;
+}
+
+.timeline-item.pending::before {
+    background: #e0e0e0; /* Grey */
+    box-shadow: 0px 0px 6px 4px #ccc;
+}
